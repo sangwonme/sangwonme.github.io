@@ -2,3 +2,5 @@
 main:
   - title: "Home"
     url: /
+  - title: "Study"
+    url: /study/

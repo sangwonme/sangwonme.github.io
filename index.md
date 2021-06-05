@@ -1,5 +1,4 @@
 ---
-title: "청구리 스튜디오"
 layout: home
 ---
 
