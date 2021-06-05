@@ -1,0 +1,36 @@
+<!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+{% comment %} TODO
+<span class="nav__sub-title">"BIG-CATEGORY-NAME"</span>
+    <ul>
+        {% for category in site.categories %}
+            {% if category[0] == "REAL-CATEGORY-NAME" %}
+                <li><a href="/categories/category-name" class="">"CATEGORY-NAME" ({{category[1].size}})</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul> 
+{% endcomment %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <li>
+        <span class="nav__sub-title">Computer Science</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "algorithm" %}
+                        <li><a href="/study/algorithm" class="">Algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "db" %}
+                        <li><a href="/study/db" class="">DB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+  </ul>
+</nav>

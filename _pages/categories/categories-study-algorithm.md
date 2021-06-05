@@ -2,6 +2,8 @@
 title: "Study Page - algorithm"
 layout: archive
 permalink: /study/algorithm
+sidebar: true
+sidebar_main: true
 ---
 
 {% assign posts = site.categories.algorithm %}
