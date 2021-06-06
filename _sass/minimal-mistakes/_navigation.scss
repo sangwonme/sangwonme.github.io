@@ -238,10 +238,10 @@
       position: relative;
       width: 60px;
       text-align: center;
-      transition: text-shadow .3s;
+      transition: color .3s;
 
       &:hover{
-        text-shadow: 0 0 .85px #333, 0 0 .85px #333;
+        color: $chunguri-orange;
       }
 
       // &:before {
