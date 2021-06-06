@@ -1,7 +1,9 @@
 ---
 title: "Study Page - db"
 layout: archive
+
 permalink: /study/db
+
 sidebar: true
 sidebar_main: true
 ---
