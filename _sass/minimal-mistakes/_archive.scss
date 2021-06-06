@@ -27,7 +27,15 @@
   }
 
   a[rel="permalink"] {
+    // archive list title
+    font-size: .8em;
+    font-weight: 400;
     position: static;
+    color: $chunguri-black;
+    transition: color .3s;
+    &:hover{
+      color: $chunguri-orange;
+    }
   }
 }
 
