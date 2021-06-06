@@ -20,6 +20,13 @@
 
 .archive__item {
   position: relative;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: box-shadow .3s;
+
+  &:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.20), 0 10px 10px rgba(0,0,0,0.18);
+  }
 
   a {
     position: relative;
@@ -58,6 +65,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
+  &.no_toc{
+    margin-top: 0;
+  }
+
   a[rel="permalink"]::before {
     content: '';
     position: absolute;
@@ -75,7 +86,6 @@
 /* remove border*/
 .page__content {
   .archive__item-title {
-    margin-top: 1em;
     border-bottom: none;
   }
 }
